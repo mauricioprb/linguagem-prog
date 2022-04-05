@@ -10,11 +10,11 @@ public class App{
     }
 
     public static String entradaDados(){
-        return JOptionPane.showInputDialog("Digite uma frase");
+        return JOptionPane.showInputDialog("Digite uma frase:");
     }
 
     public static int posicaoDigitada(){
-        return Integer.parseInt(JOptionPane.showInputDialog("Digite uma posição para começar a frase: "));
+        return Integer.parseInt(JOptionPane.showInputDialog("Digite uma posição para começar a frase:"));
     }
 
     public static void caractereAleatorio(String frase){
