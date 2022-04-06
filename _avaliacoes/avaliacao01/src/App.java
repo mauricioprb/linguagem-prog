@@ -22,6 +22,6 @@ public class App{
         int numAleatorio = random.nextInt(frase.length() + 1);
         System.out.println("\nO caractere aletório está na posição: " + numAleatorio);
         char charAleatorio = frase.charAt(numAleatorio - 1);
-        System.out.println("\nO caratere sorteado foi: " + charAleatorio);
+        System.out.println("\nO caractere sorteado foi: " + charAleatorio);
     }
 }
