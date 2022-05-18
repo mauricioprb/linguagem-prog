@@ -2,9 +2,9 @@ package Model;
 
 /**
  * Classe que guarda dados de glicemia de um paciente diabetico
- * @author laboratorio
+ * @author mauricio
  */
-public class Glicemia {
+public class Glicemia{
     int valorGlicemia;
     String momento; //ac ou dc
     String data;
@@ -13,7 +13,7 @@ public class Glicemia {
     /**
      * Construtor vazio
      */
-    public Glicemia() {}
+    public Glicemia(){}
 
     /**
      * Método construtor para instanciar um objeto glicemia com todos os seus atributos
@@ -22,7 +22,7 @@ public class Glicemia {
      * @param data
      * @param hora 
      */
-    public Glicemia(int valorGlicemia, String momento, String data, String hora) {
+    public Glicemia(int valorGlicemia, String momento, String data, String hora){
         this.valorGlicemia = valorGlicemia;
         this.momento = momento;
         this.data = data;
@@ -33,7 +33,7 @@ public class Glicemia {
      * Getter do valorGlicemia
      * @return o valor da glicemia de um determinado instante
      */
-    public int getValorGlicemia() {
+    public int getValorGlicemia(){
         return valorGlicemia;
     }
 
@@ -41,7 +41,7 @@ public class Glicemia {
      * Método que define um valor de glicemia
      * @param valorGlicemia 
      */
-    public void setValorGlicemia(int valorGlicemia) {
+    public void setValorGlicemia(int valorGlicemia){
         this.valorGlicemia = valorGlicemia;
     }
 
@@ -49,12 +49,12 @@ public class Glicemia {
      * 
      * @return 
      */
-    public String getMomento() {
+    public String getMomento(){
         return momento;
     }
 
     
-    public void setMomento(String momento) {
+    public void setMomento(String momento){
         this.momento = momento;
     }
 
@@ -62,24 +62,20 @@ public class Glicemia {
         return data;
     }
 
-    public void setData(String data) {
+    public void setData(String data){
         this.data = data;
     }
 
-    public String getHora() {
+    public String getHora(){
         return hora;
     }
 
-    public void setHora(String hora) {
+    public void setHora(String hora){
         this.hora = hora;
     }
 
     @Override
-    public String toString() {
+    public String toString(){
         return "Glicemia{" + "valorGlicemia=" + valorGlicemia + ", momento=" + momento + ", data=" + data + ", hora=" + hora + '}';
-    }
-    
-    
-    
-    
+    }   
 }

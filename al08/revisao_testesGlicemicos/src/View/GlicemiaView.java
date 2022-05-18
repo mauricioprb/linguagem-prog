@@ -9,17 +9,17 @@ import javax.swing.JOptionPane;
 
 /**
  * Classe de Visão para exibir dados de glicemia
- * @author laboratorio
+ * @author mauricio
  */
-public class GlicemiaView {
+public class GlicemiaView{
     
     /**
      * Método que recebe uma lista com dados glicemicos e os exibe na tela
      * @param lista 
      */
-    public static void exibir(List<Glicemia> lista) {
+    public static void exibir(List<Glicemia> lista){
         StringBuffer resultado = new StringBuffer();
-        for (Glicemia g : lista) {
+        for (Glicemia g : lista){
             resultado.append(g + "\n");
         }
         JOptionPane.showMessageDialog(null, resultado);

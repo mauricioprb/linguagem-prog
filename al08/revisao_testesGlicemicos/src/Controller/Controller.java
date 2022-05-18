@@ -10,17 +10,16 @@ import javax.swing.JOptionPane;
 
 /**
  * Classe de controle da aplicação
- * @author laboratorio
+ * @author mauricio
  */
-public class Controller {
+public class Controller{
     /**
      * Método principal que controla a aplicação
      * @param args 
      */
-    public static void main(String[] args) {
+    public static void main(String[] args){
         List<Glicemia> listaDadosGlicemicos = new LinkedList<>();
-        
-        
+         
         String opcao;
         StringBuffer menu = new StringBuffer();
         menu.append("1 - Popular lista de glicemia\n");
@@ -30,14 +29,14 @@ public class Controller {
         do {
             opcao = JOptionPane.showInputDialog(null, menu);
             
-            switch (opcao) {
+            switch (opcao){
                 case "1" : //popular
                     Storage.popularListaDoArquivo(listaDadosGlicemicos);
                     break;
                 case "2" : //exibr
-                    if (listaDadosGlicemicos.isEmpty()) {
+                    if (listaDadosGlicemicos.isEmpty()){
                         JOptionPane.showMessageDialog(null, "Carregue o arquivo de glicemia ou salve algum dado");
-                    } else {
+                    } else{
                         GlicemiaView.exibir(listaDadosGlicemicos);
                     }
                     break;
