@@ -1,23 +1,24 @@
 package Controller;
 
+import java.util.LinkedList;
+import java.util.List;
+
+import javax.swing.JOptionPane;
+
 import Model.Glicemia;
 import Persistence.Storage;
 import View.GlicemiaView;
-
-import java.util.LinkedList;
-import java.util.List;
-import javax.swing.JOptionPane;
 
 /**
  * Classe de controle da aplicação
  * @author mauricio
  */
-public class Controller{
+public class App{
     /**
      * Método principal que controla a aplicação
      * @param args 
      */
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception {
         List<Glicemia> listaDadosGlicemicos = new LinkedList<>();
          
         String opcao;
