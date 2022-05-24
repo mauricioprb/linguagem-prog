@@ -1,0 +1,7 @@
+1) Crie uma classe principal para solicitar e exibir na tela as informações de nome, email e telefone do usuário. Esses atributos são herdados da classe Usuario.
+
+2) Crie uma classe chamada Pessoa que herda da classe SerHumano os atributos de nome e idade e o método falar. A classe SerHumano também possui herança e herda o atributo tipo e o método andar da classe Animal. Desse modo, crie uma classe Principal para exibir na tela o conteúdo de todos os atributos e realizar a chamada de todos os método envolvidos no processo. O método falar retorma String "Nem todos falam" e o método andar imprime na tela a String "Todos andam, mas o modo é variado". Solicite ao usuário para informar o nome, a idade e o tipo.
+
+3) Uma empresa está cadastrando seus funcionários em sua base de dados. Sabendo que o funcionário é uma Pessoa, e que pessoas possuem (nome, idade e telefone), e que seus funcionários são divididos por (setor, cargo e função). Crie uma classe executável. E cadastre 3 funcionários, preferencialmente solicitando as informações via console ao usuário. Após esse cadastro, exiba esses funcionários na tela. A classe Funcionario deve herdar as características da classe Pessoa.
+
+4) Escreva um programa orientado a objetos baseado no diagrama de classes da UML.
