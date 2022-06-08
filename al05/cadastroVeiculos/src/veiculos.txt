@@ -1,0 +1,5 @@
+Ford;Fiesta;IUV-5678
+Fiat;Uno;FDS-6666
+VW;Fusca;JHY-8965
+Ford;Ranger;IJK-9086
+ford;ranger;iuv6789
