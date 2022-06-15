@@ -5,7 +5,6 @@ na tela do computador, esses dados solicitados. Adicionalmente, informe a idade 
 import javax.swing.JOptionPane;
 
 public class Aposentadoria {
-    
     public static void main(String[] args) {
         String nome = solicitarDados("Digite o nome");
         int idade = Integer.parseInt(solicitarDados("Digite a idade"));
