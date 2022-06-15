@@ -1,6 +1,6 @@
-package view;
+package View;
 
-import model.Client;
+import Model.Client;
 import javax.swing.JOptionPane;
 
 public class ClientView {

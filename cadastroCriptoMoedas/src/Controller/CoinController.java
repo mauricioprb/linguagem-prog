@@ -1,8 +1,8 @@
-package controller;
+package Controller;
 
-import model.Coin;
-import persistence.Storage;
-import view.CoinView;
+import Model.Coin;
+import Persistence.Storage;
+import View.CoinView;
 import javax.swing.JOptionPane;
 
 public class CoinController {

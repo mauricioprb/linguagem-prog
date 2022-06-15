@@ -1,6 +1,6 @@
-package view;
+package View;
 
-import model.Coin;
+import Model.Coin;
 import javax.swing.JOptionPane;
 
 public class CoinView {

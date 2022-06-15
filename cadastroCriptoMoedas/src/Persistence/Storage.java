@@ -1,6 +1,6 @@
-package persistence;
+package Persistence;
 
-import model.Coin;
+import Model.Coin;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
