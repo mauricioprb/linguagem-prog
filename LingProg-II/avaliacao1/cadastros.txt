@@ -1,0 +1,1 @@
+mau,braga,mavyt,555555,0,santa maria,brasil,20,null,Soldador null;
