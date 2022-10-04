@@ -14,6 +14,8 @@ public class FrameEx71 extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        btInfosInstituicao = new javax.swing.JButton();
+        btInfosAluno = new javax.swing.JButton();
         jMenuBar2 = new javax.swing.JMenuBar();
         jmMenu = new javax.swing.JMenu();
         jmInfosAluno = new javax.swing.JMenuItem();
@@ -33,9 +35,23 @@ public class FrameEx71 extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Painel principal");
+        jLabel2.setText("Painel Principal");
 
-        jmMenu.setText("Menu");
+        btInfosInstituicao.setText("Informações da Instituição");
+        btInfosInstituicao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btInfosInstituicaoActionPerformed(evt);
+            }
+        });
+
+        btInfosAluno.setText("Informações Aluno");
+        btInfosAluno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btInfosAlunoActionPerformed(evt);
+            }
+        });
+
+        jmMenu.setText("☰");
         jmMenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jmMenuActionPerformed(evt);
@@ -43,7 +59,6 @@ public class FrameEx71 extends javax.swing.JFrame {
         });
 
         jmInfosAluno.setText("Informações do aluno");
-        jmInfosAluno.setActionCommand("Informações do aluno");
         jmInfosAluno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jmInfosAlunoActionPerformed(evt);
@@ -72,15 +87,25 @@ public class FrameEx71 extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(56, 56, 56)
+                .addComponent(btInfosAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btInfosInstituicao)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(89, 89, 89)
+                .addGap(69, 69, 69)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
-                .addContainerGap(105, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btInfosAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btInfosInstituicao, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(82, Short.MAX_VALUE))
         );
 
         pack();
@@ -103,6 +128,14 @@ public class FrameEx71 extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jmInfosInstituicaoActionPerformed
 
+    private void btInfosInstituicaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btInfosInstituicaoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btInfosInstituicaoActionPerformed
+
+    private void btInfosAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btInfosAlunoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btInfosAlunoActionPerformed
+
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -112,6 +145,8 @@ public class FrameEx71 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btInfosAluno;
+    private javax.swing.JButton btInfosInstituicao;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;

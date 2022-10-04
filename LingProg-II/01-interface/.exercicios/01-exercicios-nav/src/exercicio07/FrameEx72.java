@@ -49,9 +49,9 @@ public class FrameEx72 extends javax.swing.JFrame {
         jTextField4.setEditable(false);
         jTextField4.setText("20202115693");
 
-        jMenu1.setText("Menu");
+        jMenu1.setText("☰");
 
-        jMenuItem1.setText("MENU PRINCIPAL");
+        jMenuItem1.setText("Início");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem1ActionPerformed(evt);
@@ -59,7 +59,7 @@ public class FrameEx72 extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItem1);
 
-        jMenuItem2.setText("INFORMAÇÕES INSTITUCIONAIS");
+        jMenuItem2.setText("Informações da instituição");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem2ActionPerformed(evt);
