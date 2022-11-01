@@ -1,13 +1,16 @@
 package Model;
 
+import View.Cadastro;
 import java.sql.*;
 import java.util.ArrayList;
 
 public class DAO {
     private String driver = "com.mysql.cj.jdbc.Driver";
-    private String url = "jdbc:mysql://localhost:3306/aula03agenda";
+    private String url = "jdbc:mysql://localhost:3306/Aula03agenda";
     private String user = "root";
     private String password = "laboratorio";
+    
+    Cadastro cadastro = new Cadastro();
 
 
 //método de conexão
@@ -54,4 +57,21 @@ public class DAO {
             return null;
         }
     }
+    
+    public void inserirFuncionario(Funcionario funcionario) {
+            //String text = "insert into funcionarios values(null, " + viewFrame.jTextField1.getText()...;
+            String insert = "insert into funcionario(nome, email, cargo) values (?, ?, ?);";
+            try {
+                Connection con = conectar();
+                PreparedStatement pst = con.prepareStatement(insert);
+                pst.setString(1, funcionario.getNome());
+                pst.setString(2, funcionario.getEmail());
+                pst.setString(3, funcionario.getCargo());
+                pst.execute();
+                con.close();
+                pst.close();
+            } catch(Exception e) {
+                System.out.println("Erro ao inserir!" + e);
+            }
+        }
 }
