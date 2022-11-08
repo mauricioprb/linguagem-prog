@@ -28,4 +28,9 @@ public class Funcionario {
     public String getCargo() {
         return cargo;
     }
+    
+    @Override 
+    public String toString() {
+        return "\nID: " + id + "\nNome: " + nome + "\nEmail: " + email + "\nCargo: " + cargo;
+    }
 }
